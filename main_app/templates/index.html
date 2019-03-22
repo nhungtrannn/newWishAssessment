@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Wish List</title>
+</head>
+<body>
+  <a href="/newwish">Add New Wish</a>
+  <h1>New Wish List</h1>
+  {% for wish in wishes %}
+    <div class="card">
+        <div class="card-content">
+            <p>Description: {{ wish.description }}</p>
+            <p>Quantity: {{ wish.quantity }}</p>
+        </div>
+    </div>
+  {% endfor %}
+</body>
+</html>
